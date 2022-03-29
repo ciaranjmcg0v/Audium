@@ -3,26 +3,26 @@
  * Detail please check src/root.js
  */
 const customFonts = {
-  'Montserrat-Regular': require('Assets/fonts/Montserrat-Regular.ttf'),
-  'Montserrat-Black': require('Assets/fonts/Montserrat-Black.ttf'),
-  'Montserrat-Medium': require('Assets/fonts/Montserrat-Medium.ttf'),
-  'Montserrat-SemiBold': require('Assets/fonts/Montserrat-SemiBold.ttf'),
-  'Montserrat-Bold': require('Assets/fonts/Montserrat-Bold.ttf'),
-  'Montserrat-Italic': require('Assets/fonts/Montserrat-Italic.ttf'),
+  'Raleway-Regular': require('Assets/fonts/Raleway-Regular.ttf'),
+  'Raleway-Black': require('Assets/fonts/Raleway-Black.ttf'),
+  'Raleway-Medium': require('Assets/fonts/Raleway-Medium.ttf'),
+  'Raleway-SemiBold': require('Assets/fonts/Raleway-SemiBold.ttf'),
+  'Raleway-Bold': require('Assets/fonts/Raleway-Bold.ttf'),
+  'Raleway-Italic': require('Assets/fonts/Raleway-Italic.ttf'),
   'OpenSans-Regular': require('Assets/fonts/OpenSans-Regular.ttf'),
-  'Montserrat-Italic': require('Assets/fonts/Montserrat-Italic.ttf'),
+  'Raleway-Italic': require('Assets/fonts/Raleway-Italic.ttf'),
   'GreatVibes-Regular': require('Assets/fonts/GreatVibes-Regular.ttf'),
 };
 const type = {
-  primary: 'Montserrat-Regular',
+  primary: 'Raleway-Regular',
   secondary: 'OpenSans-Regular',
-  black: 'Montserrat-Black',
-  medium: 'Montserrat-Medium',
-  bold: 'Montserrat-Bold',
-  semi: 'Montserrat-SemiBold',
-  extra: 'Montserrat-ExtraBold',
+  black: 'Raleway-Black',
+  medium: 'Raleway-Medium',
+  bold: 'Raleway-Bold',
+  semi: 'Raleway-SemiBold',
+  extra: 'Raleway-ExtraBold',
   stylish: 'GreatVibes-Regular',
-  italic: 'Montserrat-Italic',
+  italic: 'Raleway-Italic',
 };
 
 const Fonts = { customFonts, type };

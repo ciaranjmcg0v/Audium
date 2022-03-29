@@ -1,9 +1,9 @@
 const Colors = {
   background: '#1A0938',
 
-  primary: '#ED1BA3',
-  secondary: '#361E60',
-  accent: '#22DDF2',
+  primary: '#4E94DA',
+  secondary: '#5F3277',
+  accent: '#EFF222',
   grey0: '#393E42',
   grey1: '#090909',
   grey2: '#464646',
@@ -11,9 +11,9 @@ const Colors = {
   grey4: '#E7E7E7',
   grey5: '#FFFFFF',
   greyOutline: '#bbb',
-  success: '#52c41a',
-  error: '#ff190c',
-  warning: '#faad14',
+  success: '#3DD82A',
+  error: '#FF0E00',
+  warning: '#EF7E06',
   disabled: 'hsl(208, 8%, 90%)',
 
   black: '#000000',

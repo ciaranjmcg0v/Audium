@@ -1,5 +1,7 @@
 /**
  * Define and export the dummy data.
+ * 
+ * TO BE REPLACED BY API DATA FOR SPOTIFY/iTUNES/AMAZON MUSIC ETC
  */
 
 export const Playlists = [{

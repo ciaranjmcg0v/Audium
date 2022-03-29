@@ -39,7 +39,8 @@ const Onboarding = ({ navigation }) => (
             size={78} 
             circle={70} 
             icon={Images.right_arrow}
-            onPress={()=>{navigation.navigate('Library')}} />
+            onPress={()=>{navigation.navigate('Home')}} />
+            {/* Start sign in Process here^ */}
         </View>
     </Container>
 );

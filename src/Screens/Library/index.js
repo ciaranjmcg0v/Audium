@@ -13,6 +13,7 @@
  *    This will store songs/playlists and all other required 
  *    data from API
  * [] Add tap-hold functionality on selected song/album to bring up context menu
+ * [] Search Bar will search for results using the connected API's & Also searches your library for matches
  * ----------------------------------------------------
  */
 
@@ -21,6 +22,7 @@ import {
     Text,
     View,
     StatusBar,
+    TouchableOpacity,
     TextInput,
     TouchableWithoutFeedback,
     FlatList,
@@ -60,16 +62,29 @@ import {
  return (
     <Container>
     <StatusBar barStyle='light-content' />
+    
+         {/** Header Section */}
 
-    {/** Header section */}
-    <McText 
-    bold 
-    size={28} 
-    color={Colors.primary}
-    style={{
-        marginLeft: Metrics.padding,
-        marginTop: 12,             
-    }}>Music Library</McText>
+         <McText
+             bold
+             size={28}
+             color={Colors.primary}
+             style={{
+                 marginLeft: Metrics.padding,
+                 marginTop: 12,
+             }}>Music Library</McText>
+
+         <HeaderSection style={{
+             marginTop: 15
+         }}>
+             <TouchableOpacity onPress={() => {
+                 navigation.goBack();
+             }}>
+                 <McImage source={Images.left} />
+             </TouchableOpacity>
+             <McImage source={Images.menu} />
+         </HeaderSection>
+    
 
     {/** Search Section */}
     <SearchSection>
@@ -120,7 +135,7 @@ import {
     <View>
         <ScrollView
         contentContainerStyle={{
-            marginTop: 14, height: 200
+            marginTop: 5, height: 200
         }}
         style={{}}>
             {
@@ -185,6 +200,8 @@ import {
                     justifyContent: 'center'
                 }}>
                     <McImage source={require('Assets/images/album2.png')}
+                    // Replace above image with current playing tracks image
+
                     style={{
                         width: 38,
                         height: 38,
@@ -210,13 +227,20 @@ import {
     flex: 1;
     background-color: ${Colors.background};
  `;
+ 
+const HeaderSection = styled.View`
+    margin: 12px 24px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+`;
 
  const SearchSection = styled.View`
     width: 90%; 
     height: 8%;
     border-radius: 30px;
     background-color: ${Colors.secondary};
-    marginTop: 20px;
+    marginTop: 5px;
     align-self: center;
     flex-direction: row;
     justify-content: flex-start;
@@ -252,7 +276,7 @@ import {
     justify-content: space-between;
     align-items: flex-start;
     position: absolute;
-    bottom: 20px;
+    bottom: 5px;
     left: 0px;
     z-index: 1;
  `;

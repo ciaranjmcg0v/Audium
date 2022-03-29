@@ -1,3 +1,14 @@
+/**
+ * Bottom Bar
+ * 
+ * TODO:
+ * 
+ * [] Bottom Bar is hidden if current playlist queue is empty
+ * [] Reposition SVG/Circle so its circling around the play/pause button rather than the entire bottom bar
+ * [] Tapping on Bar takes you to player Screen with current playlist item
+ * 
+ */
+
 import React from "react";
 import { Text, View } from 'react-native';
 import { LinearGradient } from "expo-linear-gradient";
